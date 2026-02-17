@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wlm-world-generation-protocol"
+version = "0.1.0"
+description = "Dimensional structure → coherent worlds, environments, narratives, simulations."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+
+authors = [
+    { name = "Wujie Gu" }
+]
+
+keywords = [
+    "WLM",
+    "world-generation",
+    "simulation",
+    "structural-reasoning",
+    "dimensional-structure",
+    "narrative-engine",
+    "ai-worlds"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/wlm-world-generation-protocol"
+Documentation = "https://github.com/YOUR_USERNAME/wlm-world-generation-protocol/tree/main/docs"
+Source = "https://github.com/YOUR_USERNAME/wlm-world-generation-protocol"
+Issues = "https://github.com/YOUR_USERNAME/wlm-world-generation-protocol/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+wlm-worldgen = "wlm_world_generation_protocol.cli:main"
